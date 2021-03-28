@@ -5,8 +5,7 @@
     src: url('fonts/Ancizar Sans-Regular.otf');  /* indica su ubicación */
 }
 body {      /* los estilos aplicados a una etiqueta valen para todos los casos */                                             
-	background-color:#0066CC;                    
-	background-image: url(imagenes/peces.jpg);
+	background-color:#FFFFFF;                    
 	background-repeat: repeat-x;
 }
 a:link {
@@ -50,7 +49,7 @@ h1{     /* estilo para los titulares */
 	font-size: 36px;
 	font-weight: bold;
 	text-shadow: 1px 1px #000000;
-	text-align: center;
+	text-align: left;
 	max-width: 640px; /* ancho máximo del párrafo */
 	margin:auto;          /* margen igual a izquierda y derecha */ 
 	margin-bottom:10px;
