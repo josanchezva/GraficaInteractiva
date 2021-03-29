@@ -32,11 +32,16 @@ body {      /* los estilos aplicados a una etiqueta valen para todos los casos *
 	font-family: Ancizar Sans-regular;
 	margin: 0;
 }
+
+
 a{
-	color:white;
+	color:blue;
+}
+a:link#aindice{
+	color: white
 }
 a:link {
-	color: white;
+	color: blue;
 	text-decoration:none; /* para que no subraye los vínculos */
 }
 a:hover {    /* indica el estilo cuando el cursor está sobre el elemento */ 
@@ -68,6 +73,7 @@ a:hover {    /* indica el estilo cuando el cursor está sobre el elemento */
 .botonMenuInicio {      /* estilo para cada botón del menu de navegación */ 
 	min-width: 11%;
 	width: 10%;
+	font-size: 16px;
 }
 
 h1{     /* estilo para los titulares */ 

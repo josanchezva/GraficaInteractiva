@@ -2,53 +2,79 @@
 <html>
 
 <head>
+    <link rel="icon" type="image/png" sizes="16x16" href="/imagenes/favicon-16x16.png">
     <meta charset="UTF-8">
     <meta lang="es">
-    <title>con estilos</title>
-    <link href="estilos.css" rel="stylesheet" type="text/css">
+    <title>Canal de Suez</title>
+    <link href="style.css" rel="stylesheet" type="text/css"><!-- llama el archivo estilos.css -->
 </head>
 
 <body>
-    <nav class="topnav">
-        <!-- asigna el estilo "menunav" al menu -->
+    <nav class="navbar">
+        <!-- asigna el estilo "topnav" al menu -->
+        <a class="botonMenu botonMenuInicio" href="index.html" target="_self">El canal de Suez</a>
         <a class="botonMenu" href="pgubicacion.html" target="_self">Ubicación</a>
         <!-- asigna el estilo "botonMenu" a cada botón -->
         <a class="botonMenu" href="pgpersonajes.html" target="_self">Personajes</a>
         <a class="botonMenu" href="pgactividades.html" target="_self">Actividades</a>
         <a class="botonMenu" href="pghistoria.html" target="_self">Historia</a>
-        <a class="botonMenu" href="pgreferencias.html" target="_self">Referencias</a>
+        <nav class="navbar-right">
+            <a class="botonMenu" href="pgreferencias.html" target="_self">Referencias</a>
+        </nav>
     </nav>
-    <h1><a href="index.html" target="_self">El canal de Suez</a></h1>
-    <h2>Espacio Físico y Ubicación</h2>
-    <p class="uno">
-        Canal de Suez, canal del nivel del mar que corre de norte a sur a través del Istmo de
-        Suez en Egipto para conectar el Mediterráneo y los mares Rojos. El canal separa el continente africano de Asia,y
-        proporciona la ruta marítima más corta entre Europa y las tierras que se encuentran alrededor de los océanos
-        Índico y Pacífico occidental. El canal se extiende 193
-        km (120 millas) entre Port Said (Būr Saʿīd) en el norte y Suez en el sur, con canales de aproximación dragados
-        al norte de Port Said, en el Mediterráneo, y al sur de Suez. El canal no toma la ruta más corta a través del
-        istmo,que es sólo 121 km (75 millas). En su lugar, utiliza varios lagos: de norte a sur, el lago Manzala
-        (Buḥayrat al-Manzilah), el lago Timsah (Buḥayrat al-Timsāḥ), y los Lagos Amargos— Gran Lago Amargo (Al-Buḥayrah
-        al-Murrah al-Kubrā) y El Pequeño Lago Amargo (Al-Buḥayrah al-Murrah al-ughrṢā). El Canal de Suez es un corte
-        abierto, sin cerraduras,y, aunque se producen extensas longitudes rectas, hay ocho curvas principales. Al oeste
-        del canal se encuentra el delta del río Nilo,y al este se encuentra la península más alta, escarpada y árida del
-        Sinaí
-    </p>
-    <br>
-    <h2>
-        Geología
-    </h2>
-    <p class="uno">El Istmo de Suez,el único puente terrestre entre los continentes de África y Asia, es de origen geológico
-        relativamente reciente. Ambos continentes formaron una sola gran masa continental, pero durante los períodos
-        Paleogene y Neogene (hace unos 66 a 2,6 millones de años) se desarrollaron las grandes estructuras de fallas del
-        Mar Rojo y golfo de Aqaba, con la apertura y posterior ahogamiento de la vaguada del Mar Rojo hasta el Golfo de
-        Suez y el Golfo de Aqaba. En el período cuaternario siguiente (aproximadamente los últimos 2,6 millones de
-        años), hubo una oscilación considerable del nivel del mar,lo que llevó finalmente a la aparición de un istmo de
-        baja altitud que se amplió hacia el norte hasta una llanura costera abierta y baja. Allí el delta del Nilo una
-        vez se extendió más al este —como resultado de períodos de abundantes lluvias coincidentes con la Época del
-        Pleistoceno (hace 2.588.000 a 11.700 años)— y dos brazos fluviales, o distribucionarios, anteriormente cruzaron
-        el istmo norte, una rama que llegaba al mar Mediterráneo en el punto más estrecho del istmo y la otra entrando
-        en el mar a unos 14,5 km (9 millas) al este del actual Port Said.</p>
+
+    <div class="column contenido">
+        <h1>Referencias Tomadas</h1>
+        <hr>
+        <p>Esta página web fue diseñada por Johan Sebastián Sánchez Vargas, estudiante de ingeniería de sistemas de la
+            Universidad Nacional de Colombia
+            <br>
+            Contacto:josanchezva@unal.edu.co</p>
+        <ul>
+            <li>
+                <p>Información de canal de suez tomada de<a href="https://www.britannica.com/topic/Suez-Canal"
+                        target="_blank"> Britannica</a> enlace completo <a
+                        href="https://www.britannica.com/topic/Suez-Canal">https://www.britannica.com/topic/Suez-Canal</a>
+                </p>
+            </li>
+            <li>
+                <p>Mapa Político del Canal de Suez<a
+                        href="https://es.dreamstime.com/mapa-pol%C3%ADtico-del-canal-de-suez-image104055278"
+                        target="_blank"> dreamstime</a> enlace completo <a
+                        href="https://es.dreamstime.com/mapa-pol%C3%ADtico-del-canal-de-suez-image104055278">https://es.dreamstime.com/mapa-pol%C3%ADtico-del-canal-de-suez-image104055278</a>
+                </p>
+            </li>
+            <li>
+                <p>Imagen del canal desde la ciudad de suez tomada de <a
+                        href="https://en.wikipedia.org/wiki/Suez#/media/File:Aerial_view_of_city_of_Suez_and_Suez_Canal.jpg"
+                        target="_blank"> wikipedia</a> enlace completo <a
+                        href="https://en.wikipedia.org/wiki/Suez#/media/File:Aerial_view_of_city_of_Suez_and_Suez_Canal.jpg">https://en.wikipedia.org/wiki/Suez#/media/File:Aerial_view_of_city_of_Suez_and_Suez_Canal.jpg</a>
+                </p>
+            </li>
+            <li>
+                <p>Imagen de Suez tomada de <a href="https://planetofhotels.com/guide/en/egypt/suez" target="_blank">
+                        planetofhotels</a> enlace completo <a
+                        href="https://planetofhotels.com/guide/en/egypt/suez">https://planetofhotels.com/guide/en/egypt/suez</a>
+                </p>
+            <li>
+                <p>Imagen de Monte Sinaí tomada de <a
+                        href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fterrasantaviagens.com.br%2Fes%2Fmonte-sinai%2F&psig=AOvVaw1XHZywreQH3LaAuOBmjqOR&ust=1617140459586000&source=images&cd=vfe&ved=0CAMQjB1qFwoTCKCps-y71u8CFQAAAAAdAAAAABAD"
+                        target="_blank"> terrasantaviagens</a> enlace completo <a
+                        href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fterrasantaviagens.com.br%2Fes%2Fmonte-sinai%2F&psig=AOvVaw1XHZywreQH3LaAuOBmjqOR&ust=1617140459586000&source=images&cd=vfe&ved=0CAMQjB1qFwoTCKCps-y71u8CFQAAAAAdAAAAABAD">https://www.google.com/url?sa=i&url=https%3A%2F%2Fterrasantaviagens.com.br%2Fes%2Fmonte-sinai%2F&psig=AOvVaw1XHZywreQH3LaAuOBmjqOR&ust=1617140459586000&source=images&cd=vfe&ved=0CAMQjB1qFwoTCKCps-y71u8CFQAAAAAdAAAAABAD</a>
+                </p>
+            <li>
+                <p>Imagen del istmo de Suez tomada de <a
+                        href="https://es.wikipedia.org/wiki/Canal_de_Suez#/media/Archivo:Canal_de_Suez.jpg"
+                        target="_blank"> wikipedia</a> enlace completo <a
+                        href="https://es.wikipedia.org/wiki/Canal_de_Suez#/media/Archivo:Canal_de_Suez.jpg">https://es.wikipedia.org/wiki/Canal_de_Suez#/media/Archivo:Canal_de_Suez.jpg</a>
+                </p>
+            </li>
+            <li>
+                <p>El Icono de la pestaña es diseño propio</p>
+            </li>
+        </ul>
+
+    </div>
 </body>
 
 </html>
