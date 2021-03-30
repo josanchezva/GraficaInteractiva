@@ -1,57 +1,166 @@
 <!doctype html>
 <html>
 
-    <head>
-        <link rel="icon" type="image/png" sizes="16x16" href="/imagenes/favicon-16x16.png">
-        <meta charset="UTF-8">
-        <meta lang="es">
-        <title>Canal de Suez</title>
-        <link href="style.css" rel="stylesheet" type="text/css"><!-- llama el archivo estilos.css -->
-    </head>
+<head>
+    <link rel="icon" type="image/png" sizes="16x16" href="/imagenes/favicon-16x16.png">
+    <meta charset="UTF-8">
+    <meta lang="es">
+    <title>Canal de Suez</title>
+    <link href="style.css" rel="stylesheet" type="text/css"><!-- llama el archivo estilos.css -->
+</head>
 
 <body>
     <nav class="navbar">
         <!-- asigna el estilo "topnav" al menu -->
-        <a class="botonMenu botonMenuInicio" href="index.html" target="_self">El canal de Suez</a>
-        <a class="botonMenu" href="pgubicacion.html" target="_self">Ubicación</a>
-        <!-- asigna el estilo "botonMenu" a cada botón -->
-        <a class="botonMenu" href="pgpersonajes.html" target="_self">Personajes</a>
-        <a class="botonMenu" href="pgactividades.html" target="_self">Actividades</a>
-        <a class="botonMenu" href="pghistoria.html" target="_self">Historia</a>
+        <a class="botonnavbar botonnavbarInicio" href="index.html" target="_self">El canal de Suez</a>
+        <a class="botonnavbar" href="pgubicacion.html" target="_self">Ubicación</a>
+        <!-- asigna el estilo "botonnavbar" a cada botón -->
+        <a class="botonnavbar" href="pgpersonajes.html" target="_self">Personajes</a>
+        <a class="botonnavbar" href="pgactividades.html" target="_self">Actividades</a>
+        <a class="botonnavbar" href="pghistoria.html" target="_self">Historia</a>
         <nav class="navbar-right">
-            <a class="botonMenu" href="pgreferencias.html" target="_self">Referencias</a>
+            <a class="botonnavbar" href="pgreferencias.html" target="_self">Referencias</a>
         </nav>
     </nav>
-    <div class="column contenido">
-        <h1>Comunidades del canal de Suez</h1>
-        <p>La construcción del canal condujo al crecimiento de asentamientos en lo que había sido, a excepción de Suez,
-            territorio árido casi deshabitado. Más de 28.000 hectáreas (70.000 acres) fueron cultivadas, y alrededor del
-            8 por ciento de la población total se dedicaba a la agricultura, con aproximadamente 10.000 actividades
-            comerciales e industriales de diversos tamaños. Durante la crisis de Suez en 1967, casi toda la población
-            fue evacuada, y la mayoría de los asentamientos fueron gravemente dañados o destruidos durante la guerra
-            posterior. Con la reapertura del canal en 1975, sin embargo, se inició la reconstrucción de la zona, y la
-            mayoría de la población había regresado en 1978. Port Said se convirtió en una zona libre de aduanas en
-            1975, y se han establecido zonas industriales libres de impuestos a lo largo del canal. Los principales
-            centros urbanos son Port Said, con su contraparte del banco oriental, Būr Fuʾād; Ismailia (Al-Ismāʿīliyyah),
-            en la orilla norte del lago Timsah; y Suez, con su puerto de cisjordania, Būr Tawfīq. El Nilo suministra
-            agua para riego y para uso doméstico e industrial a través del Canal al-Ismāʿīliyyah.
-            <br>
-            <br>
-            Hay dos carreteras del período anterior a 1967 en la orilla oeste. Los transbordadores han sido reemplazados
-            en gran medida por cuatro pasos subterráneos: al norte de Suez, al sur y al norte del lago Timsah, y en
-            Al-Qanṭarah. A partir de este último, una carretera continúa a lo largo de la orilla este hasta Būr Fuʾād, y
-            otra corre hacia el este a través del Sinaí a Israel. Las carreteras más nuevas de la orilla este van hacia
-            el este hasta los pasos de Khutmiyyah, Giddi y Mitla, que dan acceso al centro del Sinaí. El ferrocarril en el
-            lado oeste del canal fue restaurado en la década de 1970. En 1980 se abrió el túnel de la carretera Ahmad Hamdi,
-            conectando Egipto propiamente dicho con su gobernación(muḥāfaẓah)de Shamāl Sīnāʾ. A unos 1,6 km (1 milla)
-            del túnel pasa por debajo del propio canal. Como parte del proyecto de expansión de 2014, el gobierno egipcio
-            construyó túneles adicionales que corren bajo el canal, que fueron inaugurados en mayo de 2019. El proyecto
-            de expansión también incluye el desarrollo de infraestructuras de transporte adicionales en los alrededores,
-            tiene como objetivo recuperar alrededor de 1,6 millones de hectáreas (4 millones de acres) de tierra para el
-            cultivo, y planea desarrollar una extensa zona de libre comercio a lo largo del canal.
-        </p>
-    </div>
 
+    <div class="flex-container">
+        <div class="column indice" id="aindice">
+            <ul>
+                <li><a href="#historia">Historia</a></li>
+                <ul>
+                    <li><a href="#construccion">Construcción</a></li>
+                    <li><a href="#financiacion">Financiación</a></li>
+                </ul>
+            </ul>
+        </div>
+        <div class="column contenido">
+            <h1>El Canal de Suez</h1>
+            <hr>
+            <h2 id="historia">Historia</h2>
+            <p>En este sitio encontrarás Información a cerca del canal de Suez.</p>
+            <p>¿Qué es el canal de Suez?</p>
+            <p>‎El Canal de Suez es un canal hecho por el humano que atraviesa de norte a sur el Istmo de Suez en
+                Egipto.
+                El Canal de Suez conecta el ‎‎mar Mediterráneo‎‎ con el ‎‎Mar Rojo,‎‎convirtiéndolo en la ruta marítima
+                más corta a Asia desde Europa. Desde su finalización en 1869, se ha convertido en uno de los carriles de
+                envío más utilizados del mundo.‎</p>
+
+            <h3 id="construccion">Construcción</h3>
+
+            <p>
+
+                Se cree que el primer canal de la región fue excavado alrededor de 1850 A.C.,cuando un canal de riego
+                navegable en el período de inundación fue construido en el Wadi Tumelat (Al-Ṭumaylāt), un valle seco del
+                río
+                al este del delta del Nilo. Conocido como el Canal de los Faraones, ese canal fue extendido por los
+                Ptolemies a través de los Lagos Amargos hasta el Mar Rojo. Desde la región del lago Timsah un brazo
+                hacia el
+                norte parece haber llegado a una antigua rama del Nilo. Extendido bajo los romanos (que lo llamaban
+                Canal de
+                Trajano), descuidado por los bizantinos,y reabierto por los primeros árabes, ese canal fue
+                deliberadamente
+                llenado por los ʿAbbāsid califas por razones militares en 775 CE. A lo largo de todo, la razón de estos
+                cambios parece haber sido facilitar el comercio desde las tierras delta hasta el Mar Rojo en lugar de
+                proporcionar un pasaje al Mediterráneo.
+
+                Venecianos en el siglo XV y los franceses en los siglos XVII y XVIII especularon sobre la posibilidad de
+                hacer un canal a través del istmo. Un canal allí permitiría a los barcos de sus naciones navegar
+                directamente desde el Mediterráneo hasta el Océano Índico y así disputar el monopolio del comercio de la
+                India Oriental que había sido ganado primero por los portugueses, luego por los holandeses, y finalmente
+                por
+                los ingleses, todos los cuales utilizaron la ruta alrededor del Cabo de buena Esperanza. Esos esquemas
+                no
+                llegaron a nada.
+                <br>
+                <br>
+                No fue hasta la ocupación francesa de Egipto (1798-1801) que se realizó la primera encuesta a través del
+                istmo. Napoleón investigó personalmente los restos del antiguo canal. J.M. Le Père, su ingeniero jefe de
+                líneas de comunicación, calculó erróneamente que el nivel del Mar Rojo estaba 10 metros (33 pies) por
+                encima
+                del del Mediterráneo y, por lo tanto, que se necesitarían cerraduras. Teniendo en cuenta las condiciones
+                adversas en las que trabajaban los topógrafos franceses y la creencia prevaleciente en la disparidad de
+                los
+                niveles de los dos mares, el error era excusable, y la conclusión de Le Père fue aceptada sin críticas
+                por
+                una sucesión de autores posteriores de proyectos de canales. Los estudios para un canal se realizaron de
+                nuevo en 1834 y en 1846. En 1854 Ferdinand de Lesseps recibió una Ley de Concesión del virrey (khedive)
+                de
+                Egipto, Saʿīd Pasha,para construir un canal, y en 1856 un segundo acto confirió a la Compañía del Canal
+                de
+                Suez (Compagnie Universelle du Canal Maritime de Suez) el derecho a operar un canal marítimo durante 99
+                años
+                después de la finalización de la obra. La construcción comenzó en 1859 y tomó 10 años en lugar de los 6
+                que
+                se habían previsto; las dificultades climáticas, la epidemia de cólera en 1865 y los problemas laborales
+                tempranos ralentizaron las operaciones. Un proyecto inicial fue el corte de un pequeño canal (el
+                Al-Ismāʾīliyyah) desde el delta a lo largo del Wadi Tumelat, con una rama sur (ahora llamada canal
+                Al-Suways
+                al-Ḥulwah; los dos canales combinados se llamaban anteriormente el Canal del Agua Dulce) a Suez y uno
+                del
+                norte (Canalal-ʿAbbāsiyyah) a Port Said. Esto suministraba agua potable en una zona árida y se completó
+                en
+                1863.
+                <br>
+                <br>
+                Al principio, la excavación se hacía a mano con picos y cestas, los campesinos eran reclutados como
+                trabajo
+                forzoso. Más tarde, dragas y palas de vapor operadas por obreros europeos tomaron el control, y, como el
+                dragado resultó más barato que la excavación en seco, el terreno se inundó artificialmente y se dragó
+                siempre que fue posible. Aparte de en las pocas áreas donde se encontraron estratos rocosos, todo el
+                canal
+                fue conducido a través de la arena o el aluvión. En agosto de 1869 se completó el canal, y fue
+                inaugurado
+                oficialmente con una elaborada ceremonia el 17 de noviembre.
+            </p>
+
+            <img src="/imagenes/construccioncanal.jpg" alt="Miles de personas trabajando en la construcción del canal de Suez">
+
+            <h4 id="financiacion">Financiación</h4>
+
+            <p> La Compañía del Canal de Suez había sido constituida como una sociedad anónima egipcia con su sede
+                central
+                en París. A pesar de la frialdad oficial mucho más temprana, incluso la hostilidad, por parte de Gran
+                Bretaña,Lesseps estaba ansioso por la participación internacional y ofrecía acciones ampliamente. Sólo
+                los
+                franceses respondieron, sin embargo, comprando el 52 por ciento de las acciones; del resto, el 44 por
+                ciento
+                fue ocupado por Saʾīd Pasha. El primer consejo de administración incluyó representantes de 14 países.
+                <br>
+                <br>
+                En 1875, los problemas financieros obligaron al nuevo virrey, Ismāʾīl Pasha,a vender su participación,
+                que
+                (a instancias del primer ministro, Benjamin Disraeli)fue comprada a la vez por el gobierno británico.
+                Hasta
+                ese año, las acciones se habían mantenido por debajo de su precio de emisión de 500 francos cada una.
+                Con la
+                compra británica (a 568 francos cada una), se produjo una apreciación constante, a más de 3.600 francos
+                en
+                1900.
+                <br><br>
+                Originalmente asignó el 15 por ciento de los beneficios netos, Egipto renunció más tarde al porcentaje
+                y,
+                después de la venta de las 176.602 acciones de Ismāʿīl, permaneció sin representación en el consejo de
+                administración hasta 1949, cuando, en efecto, se restableció como miembro del consejo y asignó el 7 por
+                ciento de los beneficios brutos. En ese año también se acordó que el 90 por ciento de los nuevos puestos
+                de
+                trabajo administrativos y el 80 por ciento de los nombramientos técnicos se ofrecerían a los egipcios y
+                que
+                la Compañía del Canal proporcionaría hospitales, escuelas y otros servicios.
+                <br><br>
+                En 1956, 13 años antes de que expirara la concesión, el canal fue nacionalizado por el presidente
+                egipcio
+                Gamal Abdel Nasser,precipitando la crisis de Suez. Desde entonces, el gobierno egipcio ha ejercido un
+                control total a través de su Autoridad del Canal de Suez (SCA), aunque la compañía original (ahora GDF
+                Suez)
+                continúa en Francia como una empresa multinacional de servicios públicos.
+                <br><br>
+            </p>
+            <img src="/imagenes/crisissuez.jpg" alt="Crisis del canal del Suez, barcos atrapados cuando estalló el conflicto">
+            <p></p>
+
+
+        </div>
+    </div>
 </body>
 
 </html>

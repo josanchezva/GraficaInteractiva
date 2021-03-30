@@ -35,23 +35,21 @@ body {      /* los estilos aplicados a una etiqueta valen para todos los casos *
 
 
 a{
-	color:blue;
+	color:rgb(0, 4, 231);
 }
-a:link#aindice{
-	color: white
-}
+
 a:link {
-	color: blue;
+	color:rgb(0, 4, 231);
 	text-decoration:none; /* para que no subraye los vínculos */
 }
 a:hover {    /* indica el estilo cuando el cursor está sobre el elemento */ 
-	color: rgb(1, 1, 189);
+	color:rgb(0, 4, 231);
 	text-decoration: underline;
 }
 
-.botonMenu {      /* estilo para cada botón del menu de navegación */ 
+.botonnavbar {      /* estilo para cada botón del menu de navegación */ 
 	font-family: Ancizar Sans-regular;  /* solo si se suministra el archivo de la fuente */
-	font-size: 14px;
+	font-size: 16px;
 	font-style: normal;
 	font-weight: normal;
 	text-align: center;
@@ -60,20 +58,18 @@ a:hover {    /* indica el estilo cuando el cursor está sobre el elemento */
 	float: left;
 	cursor: pointer;
 }
-.botonMenu:link {
+.botonnavbar:link {
 	color:#666666;
 	text-decoration: none;	/* para que no subraye los vínculos */ 
 	cursor: pointer;
 }
-.botonMenu:hover {
+.botonnavbar:hover {
 	color:#FFFFFF;
-	text-shadow: 1px 1px #000000;	
 	cursor:pointer;
 }   
-.botonMenuInicio {      /* estilo para cada botón del menu de navegación */ 
-	min-width: 11%;
-	width: 10%;
+.botonnavbarInicio {      /* estilo para cada botón del menu de navegación */ 
 	font-size: 16px;
+	width: 20%;
 }
 
 h1{     /* estilo para los titulares */ 
