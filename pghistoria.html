@@ -2,30 +2,29 @@
 <html>
 
 <head>
-    <link rel="icon" type="image/png" sizes="16x16" href="/imagenes/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/imagenes/favicon-16x16.png"><!--Establece la ruta y define el icono de la pestaña en el navegador-->
     <meta charset="UTF-8">
     <meta lang="es">
     <title>Canal de Suez</title>
-    <link href="style.css" rel="stylesheet" type="text/css"><!-- llama el archivo estilos.css -->
+    <link href="style.css" rel="stylesheet" type="text/css"><!-- llama el archivo style.css -->
 </head>
 
 <body>
-    <nav class="navbar">
-        <!-- asigna el estilo "topnav" al menu -->
+    <nav class="navbar"><!-- Asigna una barra de navegacion-->
         <a class="botonnavbar botonnavbarInicio" href="index.html" target="_self">El canal de Suez</a>
         <a class="botonnavbar" href="pgubicacion.html" target="_self">Ubicación</a>
         <!-- asigna el estilo "botonnavbar" a cada botón -->
         <a class="botonnavbar" href="pgpersonajes.html" target="_self">Personajes</a>
         <a class="botonnavbar" href="pgactividades.html" target="_self">Actividades</a>
         <a class="botonnavbar" href="pghistoria.html" target="_self">Historia</a>
-        <nav class="navbar-right">
+        <nav class="navbar-right"><!-- Asigna una barra de navegacion anidada para incluir botones a la derecha de la barra-->
             <a class="botonnavbar" href="pgreferencias.html" target="_self">Referencias</a>
         </nav>
     </nav>
 
-    <div class="flex-container">
-        <div class="column indice">
-            <ul>
+    <div class="flex-container"><!-- Asigna un flex container  que sera el padre de todo el contenido de la pagina-->
+        <div class="column indice"><!-- Columna que almacena la barra lateral izquierda para el contenido de la página -->
+            <ul><!-- Lista no ordenada del contenido de la página -->
                 <li><a href="#historia">Historia</a></li>
                 <ul>
                     <li><a href="#construccion">Construcción</a></li>
@@ -33,128 +32,89 @@
                 </ul>
             </ul>
         </div>
-        <div class="column contenido">
-            <h1>El Canal de Suez</h1>
+        <div class="column contenido"><!--Columna para almacenar los párrafos y el contenido de la página-->
+            <h1>El Canal de Suez</h1><!-- titulo-->
             <hr>
-            <h2 id="historia">Historia</h2>
-            <p>En este sitio encontrarás Información a cerca del canal de Suez.</p>
-            <p>¿Qué es el canal de Suez?</p>
-            <p>‎El Canal de Suez es un canal hecho por el humano que atraviesa de norte a sur el Istmo de Suez en
-                Egipto.
-                El Canal de Suez conecta el ‎‎mar Mediterráneo‎‎ con el ‎‎Mar Rojo,‎‎convirtiéndolo en la ruta marítima
-                más corta a Asia desde Europa. Desde su finalización en 1869, se ha convertido en uno de los carriles de
-                envío más utilizados del mundo.‎</p>
-
-            <h3 id="construccion">Construcción</h3>
+            <h2 id="historia">Historia</h2><!-- Subtítulo utilizado con id para saltar desde el índice-->
+            <h3 id="construccion">Construcción</h3><!-- Subtítulo utilizado con id para saltar desde el índice-->
 
             <p>
 
                 Se cree que el primer canal de la región fue excavado alrededor de 1850 A.C.,cuando un canal de riego
                 navegable en el período de inundación fue construido en el Wadi Tumelat (Al-Ṭumaylāt), un valle seco del
-                río
-                al este del delta del Nilo. Conocido como el Canal de los Faraones, ese canal fue extendido por los
+                río al este del delta del Nilo. Conocido como el Canal de los Faraones, ese canal fue extendido por los
                 Ptolemies a través de los Lagos Amargos hasta el Mar Rojo. Desde la región del lago Timsah un brazo
-                hacia el
-                norte parece haber llegado a una antigua rama del Nilo. Extendido bajo los romanos (que lo llamaban
-                Canal de
-                Trajano), descuidado por los bizantinos,y reabierto por los primeros árabes, ese canal fue
-                deliberadamente
-                llenado por los ʿAbbāsid califas por razones militares en 775 CE. A lo largo de todo, la razón de estos
+                hacia el norte parece haber llegado a una antigua rama del Nilo. Extendido bajo los romanos (que lo llamaban
+                Canal de Trajano), descuidado por los bizantinos, y reabierto por los primeros árabes, ese canal fue
+                deliberadamente llenado por los ʿAbbāsid califas por razones militares en 775 CE. A lo largo de todo, la razón de estos
                 cambios parece haber sido facilitar el comercio desde las tierras delta hasta el Mar Rojo en lugar de
                 proporcionar un pasaje al Mediterráneo.
 
-                Venecianos en el siglo XV y los franceses en los siglos XVII y XVIII especularon sobre la posibilidad de
+                Los Venecianos en el siglo XV y los franceses en los siglos XVII y XVIII especularon sobre la posibilidad de
                 hacer un canal a través del istmo. Un canal allí permitiría a los barcos de sus naciones navegar
                 directamente desde el Mediterráneo hasta el Océano Índico y así disputar el monopolio del comercio de la
                 India Oriental que había sido ganado primero por los portugueses, luego por los holandeses, y finalmente
-                por
-                los ingleses, todos los cuales utilizaron la ruta alrededor del Cabo de buena Esperanza. Esos esquemas
-                no
-                llegaron a nada.
+                por los ingleses, todos los cuales utilizaron la ruta alrededor del Cabo de buena Esperanza. Esos esquemas
+                no llegaron a nada.
             </p>
             <br>
             <img src="/imagenes/canalfrancia.jpg" alt="Inauguración del canal de Suez"  width="700 " height=" 393">
             <p> No fue hasta la ocupación francesa de Egipto (1798-1801) que se realizó la primera encuesta a través del
                 istmo. Napoleón investigó personalmente los restos del antiguo canal. J.M. Le Père, su ingeniero jefe de
                 líneas de comunicación, calculó erróneamente que el nivel del Mar Rojo estaba 10 metros (33 pies) por
-                encima
-                del del Mediterráneo y, por lo tanto, que se necesitarían cerraduras. Teniendo en cuenta las condiciones
+                encima del del Mediterráneo y, por lo tanto, que se necesitarían cerraduras. Teniendo en cuenta las condiciones
                 adversas en las que trabajaban los topógrafos franceses y la creencia prevaleciente en la disparidad de
-                los
-                niveles de los dos mares, el error era excusable, y la conclusión de Le Père fue aceptada sin críticas
-                por
-                una sucesión de autores posteriores de proyectos de canales. Los estudios para un canal se realizaron de
+                los niveles de los dos mares, el error era excusable, y la conclusión de Le Père fue aceptada sin críticas
+                por una sucesión de autores posteriores de proyectos de canales. Los estudios para un canal se realizaron de
                 nuevo en 1834 y en 1846. En 1854 Ferdinand de Lesseps recibió una Ley de Concesión del virrey (khedive)
-                de
-                Egipto, Saʿīd Pasha,para construir un canal, y en 1856 un segundo acto confirió a la Compañía del Canal
-                de
-                Suez (Compagnie Universelle du Canal Maritime de Suez) el derecho a operar un canal marítimo durante 99
-                años
-                después de la finalización de la obra. La construcción comenzó en 1859 y tomó 10 años en lugar de los 6
-                que
-                se habían previsto; las dificultades climáticas, la epidemia de cólera en 1865 y los problemas laborales
+                de Egipto, Saʿīd Pasha,para construir un canal, y en 1856 un segundo acto confirió a la Compañía del Canal
+                de Suez (Compagnie Universelle du Canal Maritime de Suez) el derecho a operar un canal marítimo durante 99
+                años después de la finalización de la obra. La construcción comenzó en 1859 y tomó 10 años en lugar de los 6
+                que se habían previsto; las dificultades climáticas, la epidemia de cólera en 1865 y los problemas laborales
                 tempranos ralentizaron las operaciones. Un proyecto inicial fue el corte de un pequeño canal (el
                 Al-Ismāʾīliyyah) desde el delta a lo largo del Wadi Tumelat, con una rama sur (ahora llamada canal
-                Al-Suways
-                al-Ḥulwah; los dos canales combinados se llamaban anteriormente el Canal del Agua Dulce) a Suez y uno
-                del
-                norte (Canalal-ʿAbbāsiyyah) a Port Said. Esto suministraba agua potable en una zona árida y se completó
-                en
-                1863.
+                Al-Suways al-Ḥulwah; los dos canales combinados se llamaban anteriormente el Canal del Agua Dulce) a Suez y uno
+                del norte (Canalal-ʿAbbāsiyyah) a Port Said. Esto suministraba agua potable en una zona árida y se completó
+                en 1863.
                 <br>
                 <br>
                 Al principio, la excavación se hacía a mano con picos y cestas, los campesinos eran reclutados como
-                trabajo
-                forzoso. Más tarde, dragas y palas de vapor operadas por obreros europeos tomaron el control, y, como el
+                trabajo forzoso. Más tarde, dragas y palas de vapor operadas por obreros europeos tomaron el control, y, como el
                 dragado resultó más barato que la excavación en seco, el terreno se inundó artificialmente y se dragó
                 siempre que fue posible. Aparte de en las pocas áreas donde se encontraron estratos rocosos, todo el
-                canal
-                fue conducido a través de la arena o el aluvión. En agosto de 1869 se completó el canal, y fue
-                inaugurado
-                oficialmente con una elaborada ceremonia el 17 de noviembre.
+                canal fue conducido a través de la arena o el aluvión. En agosto de 1869 se completó el canal, y fue
+                inaugurado oficialmente con una elaborada ceremonia el 17 de noviembre.
             </p>
 
             <img src="/imagenes/construccioncanal.jpg"
                 alt="Miles de personas trabajando en la construcción del canal de Suez" width="700" height="463">
 
-            <h4 id="financiacion">Financiación</h4>
+            <h4 id="financiacion">Financiación</h4> <!-- Subtítulo utilizado con id para saltar desde el índice-->
 
             <p> La Compañía del Canal de Suez había sido constituida como una sociedad anónima egipcia con su sede
-                central
-                en París. A pesar de la frialdad oficial mucho más temprana, incluso la hostilidad, por parte de Gran
+                central en París. A pesar de la frialdad oficial mucho más temprana, incluso la hostilidad, por parte de Gran
                 Bretaña,Lesseps estaba ansioso por la participación internacional y ofrecía acciones ampliamente. Sólo
-                los
-                franceses respondieron, sin embargo, comprando el 52 por ciento de las acciones; del resto, el 44 por
-                ciento
-                fue ocupado por Saʾīd Pasha. El primer consejo de administración incluyó representantes de 14 países.
+                los franceses respondieron, sin embargo, comprando el 52 por ciento de las acciones; del resto, el 44 por
+                ciento fue ocupado por Saʾīd Pasha. El primer consejo de administración incluyó representantes de 14 países.
                 <br>
                 <br>
                 En 1875, los problemas financieros obligaron al nuevo virrey, Ismāʾīl Pasha,a vender su participación,
-                que
-                (a instancias del primer ministro, Benjamin Disraeli)fue comprada a la vez por el gobierno británico.
-                Hasta
-                ese año, las acciones se habían mantenido por debajo de su precio de emisión de 500 francos cada una.
-                Con la
-                compra británica (a 568 francos cada una), se produjo una apreciación constante, a más de 3.600 francos
-                en
-                1900.
+                que (a instancias del primer ministro, Benjamin Disraeli)fue comprada a la vez por el gobierno británico.
+                Hasta ese año, las acciones se habían mantenido por debajo de su precio de emisión de 500 francos cada una.
+                Con la compra británica (a 568 francos cada una), se produjo una apreciación constante, a más de 3.600 francos
+                en 1900.
                 <br><br>
                 Originalmente asignó el 15 por ciento de los beneficios netos, Egipto renunció más tarde al porcentaje
-                y,
-                después de la venta de las 176.602 acciones de Ismāʿīl, permaneció sin representación en el consejo de
+                y, después de la venta de las 176.602 acciones de Ismāʿīl, permaneció sin representación en el consejo de
                 administración hasta 1949, cuando, en efecto, se restableció como miembro del consejo y asignó el 7 por
                 ciento de los beneficios brutos. En ese año también se acordó que el 90 por ciento de los nuevos puestos
-                de
-                trabajo administrativos y el 80 por ciento de los nombramientos técnicos se ofrecerían a los egipcios y
-                que
-                la Compañía del Canal proporcionaría hospitales, escuelas y otros servicios.
+                de trabajo administrativos y el 80 por ciento de los nombramientos técnicos se ofrecerían a los egipcios y
+                que la Compañía del Canal proporcionaría hospitales, escuelas y otros servicios.
                 <br><br>
                 En 1956, 13 años antes de que expirara la concesión, el canal fue nacionalizado por el presidente
-                egipcio
-                Gamal Abdel Nasser,precipitando la crisis de Suez. Desde entonces, el gobierno egipcio ha ejercido un
+                egipcio Gamal Abdel Nasser, precipitando la crisis de Suez. Desde entonces el gobierno egipcio ha ejercido un
                 control total a través de su Autoridad del Canal de Suez (SCA), aunque la compañía original (ahora GDF
-                Suez)
-                continúa en Francia como una empresa multinacional de servicios públicos.
+                Suez) continúa en Francia como una empresa multinacional de servicios públicos.
                 <br><br>
             </p>
             <img src="/imagenes/crisissuez.jpg"
