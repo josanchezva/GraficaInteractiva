@@ -1,164 +1,207 @@
 @charset "UTF-8";
-
-@font-face { 
-    font-family: Nanum_Gothic_Regular;             /* define una fuente */
-    src: url('fonts/Nanum_Gothic/NanumGothic-Regular.ttf');  /* indica su ubicación */
-}
-@font-face { 
-    font-family: Asap_Regular;             /* define una fuente */
-    src: url('fonts/Asap/static/Asap-Regular.ttf');  /* indica su ubicación */
+@font-face {
+    font-family: Nanum_Gothic_Regular;
+    /* define una fuente */
+    src: url('fonts/Nanum_Gothic/NanumGothic-Regular.ttf');
+    /* indica su ubicación */
 }
 
-body {      /*Estilo por defecto para el body del documento*/                                       
-	background-color:#FFFFFF;
-	background-repeat: repeat-x;
-	font-family:Asap_Regular;
-	margin: 0;
-	padding: 0;
+@font-face {
+    font-family: Asap_Regular;
+    /* define una fuente */
+    src: url('fonts/Asap/static/Asap-Regular.ttf');
+    /* indica su ubicación */
 }
-  .flex-container {/*Contenedor que almacena el contenido, es de tamaño dinámico */
-	display: flex;
-  }
-  .indice { /*Clase definida para el formato del índice en la barra lateral izquierda*/
-	  margin-top: 46px;
-	  text-align: left;
-	  padding: 25px;
-	  min-width: 10%;
-	  width: 15%;
-	  min-height: 100vh;
-	  background-color: #444;
-	  box-shadow: 10px 0 5px -2px #888;
-	  position: fixed;
-  }
 
-  .indice a, .indice a:link,.indice a:hover{ /*diferencia el color de los indices de al barra lateral izquierda*/
-    color:#FFFFFF;
-	}
+body {
+    /*Estilo por defecto para el body del documento*/
+    background-color: #f3f4ed;
+    font-family: Asap_Regular;
+    margin: 0;
+    padding: 0;
+}
 
-  .contenido{ /*Clase definida para el formato del contenido central*/
-	  padding: 40px;
-	  padding-top: 10vh;
-	  padding-left: 25vw;
-	  text-align: justify;
-	  max-width: 700px;
-  }
-  
-a{ /* se define el color de los enlaces  */
-	color:rgb(0, 4, 231);
+.flex-container {
+    /*Contenedor que almacena el contenido, es de tamaño dinámico */
+    display: flex;
+}
+
+.indice {
+    /*Clase definida para el formato del índice en la barra lateral izquierda*/
+    margin-top: 46px;
+    text-align: left;
+    padding: 25px;
+    min-width: 10%;
+    width: 10%;
+    min-height: 100vh;
+    background-color: #424642;
+    position: fixed;
+    box-shadow: -1px 0px 1px black inset;
+}
+
+.indice a,
+.indice a:link,
+.indice a:hover {
+    /*diferencia el color de los indices de al barra lateral izquierda*/
+    color: #f3f4ed;
+    text-decoration: none;
+    /* para que no subraye los vínculos */
+}
+
+.contenido {
+    /*Clase definida para el formato del contenido central*/
+    padding: 40px;
+    padding-top: 10vh;
+    padding-left: 25vw;
+    text-align: justify;
+    max-width: 700px;
+}
+
+a {
+    /* se define el color de los enlaces  */
+    color: rgb(0, 4, 231);
 }
 
 a:link {
-	color:rgb(0, 4, 231);
-	text-decoration:none; /* para que no subraye los vínculos */
-}
-a:hover {    /* indica el estilo cuando el cursor está sobre el elemento */ 
-	color:rgb(0, 4, 231);
-	text-decoration: underline;
+    color: rgb(0, 4, 231);
 }
 
-.botonnavbar {      /* estilo para cada botón del menu de navegación */ 
-	
-	font-size: 16px;
-	font-style: normal;
-	font-weight: normal;
-	text-align: center;
-	width: 142px;
-	padding:5px 10px 6px 8px;
-	float: left;
-	cursor: pointer;
+a:hover {
+    /* indica el estilo cuando el cursor está sobre el elemento */
+    color: rgb(0, 4, 231);
+    text-decoration: underline;
 }
+
+.botonnavbar {
+    /* estilo para cada botón del menu de navegación */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    width: 142px;
+    padding: 5px 10px 6px 8px;
+    float: left;
+    cursor: pointer;
+}
+
 .botonnavbar:link {
-	color: #fff;
-	text-decoration: none;	/* No subraya los vínculos */ 
-	cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    /* No subraya los vínculos */
+    cursor: pointer;
 }
+
 .botonnavbar:hover {
-	color:#FFFFFF;
-	cursor:pointer;
-}   
-.botonnavbarInicio  {
-	font-size: 16px;
-	width: 20%;
+    color: #FFFFFF;
+    cursor: pointer;
 }
-h1{     /* estilo para los titulares */ 
-	color:rgb(8, 8, 8);
-	font-size: 40px;
-	font-weight: bold;
-	text-align: left;
-	max-width: 640px; /* ancho máximo del párrafo */
-	margin:0;          /* margen igual a izquierda y derecha */ 
-} 
-h1:link {
-	color:rgb(8, 8, 8);
-	cursor: pointer;
-	text-decoration: none;  /* para que no subraye los vínculos en los titulares*/ 
+
+.botonnavbarInicio {
+    font-size: 16px;
+    width: 20%;
+    box-shadow: -1px 0px 1px black inset;
 }
-h2,h3,h4,h5,h6 { /*estilo de los titulares h1 a h6*/
-	
-	color:rgb(8, 8, 8);
-	font-size: 36px;
-	font-weight: normal;
-	text-align: left;
-	max-width: 640px;
-	padding:10px;  /* arriba, derecha, abajo, izquierda */
-	margin: 0;
-	padding-left: 30px;
+
+h1 {
+    /* estilo para los titulares */
+    color: rgb(8, 8, 8);
+    font-size: 40px;
+    font-weight: bold;
+    text-align: left;
+    max-width: 640px;
+    /* ancho máximo del párrafo */
+    margin: 0;
+    /* margen igual a izquierda y derecha */
 }
-ul {        /* estilo para las listas */ 
-	list-style-type: none;    /* quita los "bullit lists" de las listas  */ 
-	line-height: 1cm;
-	margin: 0;
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /*estilo de los titulares h1 a h6*/
+    color: rgb(8, 8, 8);
+    font-size: 36px;
+    font-weight: normal;
+    text-align: left;
+    max-width: 640px;
+    padding: 10px;
+    /* arriba, derecha, abajo, izquierda */
+    margin: 0;
+    padding-left: 30px;
+}
+
+ul {
+    /* estilo para las listas */
+    list-style-type: none;
+    /* quita los "bullit lists" de las listas  */
+    line-height: 1cm;
+    margin: 0;
     padding-inline-start: 0px;
-	text-align: left;
+    text-align: left;
 }
 
-ul ul li { /*estilo para ciertas listas anidadas*/
-	list-style-type: none;    /* quita los "bullit lists" de las listas  */ 
-	line-height: 1cm;
-	text-align: left;
-	padding-left: 20px;
-}
-p{ /*estilo de los párrafos*/
-	margin-left: 50px;
-	font-size: 26px;
-	color: #444;
+ul ul li {
+    /*estilo para ciertas listas anidadas*/
+    list-style-type: none;
+    /* quita los "bullit lists" de las listas  */
+    line-height: 1cm;
+    text-align: left;
+    padding-left: 20px;
 }
 
-.navbar { /*Estilo de la barra de navegación*/
-	overflow: hidden;
-	background-color: #333;
-	position: fixed; /* Set the navbar to fixed position */
-	top: 0; /* Position the navbar at the top of the page */
-	width: 100vw; /* Full width */
-	background-color:  rgb(1, 1, 68);
-	height: 46px;
-  }
-  
-  /* Enlaces dentro de la barra de navegación*/
-  .navbar a {
-	float: left;
-	display: block;
-	color: #f2f2f2;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	overflow: hidden;
-	margin: none;
-	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  }
+p {
+    /*estilo de los párrafos*/
+    margin-left: 50px;
+    font-size: 26px;
+    color: #536162;
+}
 
-  .navbar-right{ /*ubicación de los elementos a la derecha en la barra de navegación*/
-	  float: right;
-  }
-  
-  /* Comportamiento de los enlaces de la barra con el mouse encima */
-  .navbar a:hover {
-	background: #ddd;
-	color: black;
-  }
-  
-  .main {
-	margin-top: 90px; /* Añade un margén para evitar que se solape la barra de navegación y el contenido*/
-	margin-left: 500px;
-  }
-  
+.navbar {
+    /*Estilo de la barra de navegación*/
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100vw;
+    /* Full width */
+    background-color: #c06014;
+    height: 46px;
+    box-shadow: 0px 1px 1px 0px black;
+}
+
+
+/* Enlaces dentro de la barra de navegación*/
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    overflow: hidden;
+    margin: none;
+}
+
+.navbar-right {
+    /*ubicación de los elementos a la derecha en la barra de navegación*/
+    float: right;
+    box-shadow: -1px 1px 1px 0px black;
+}
+
+
+/* Comportamiento de los enlaces de la barra con el mouse encima */
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+.main {
+    margin-top: 90px;
+    /* Añade un margén para evitar que se solape la barra de navegación y el contenido*/
+    margin-left: 500px;
+}
