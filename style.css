@@ -19,6 +19,7 @@ body {
     font-family: Asap_Regular;
     margin: 0;
     padding: 0;
+    /*paleta de colores Color Hunt 264862 https://colorhunt.co/palette/264862*/
 }
 
 .flex-container {
@@ -189,7 +190,7 @@ p {
 .navbar-right {
     /*ubicación de los elementos a la derecha en la barra de navegación*/
     float: right;
-    box-shadow: -1px 1px 1px 0px black;
+    box-shadow: -1px 0px 1px 0px black;
 }
 
 
@@ -202,6 +203,6 @@ p {
 
 .main {
     margin-top: 90px;
-    /* Añade un margén para evitar que se solape la barra de navegación y el contenido*/
+    /* Añade un márgen para evitar que se solape la barra de navegación y el contenido*/
     margin-left: 500px;
 }
