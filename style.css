@@ -26,6 +26,7 @@ body {
 .flex-container {
     /*Contenedor que almacena el contenido, es de tamaño dinámico */
     display: flex;
+    width: auto;
 }
 
 .indice {
@@ -209,16 +210,113 @@ p {
     min-width: 480px;
 }
 
+#btn-menu {
+    display: none;
+    /* oculta el checkbox cuando no es necesario*/
+}
+
+header {
+    width: 100%;
+    z-index: 10;
+    /* coloca el checkbox por encima del contenido*/
+}
+
+header label {
+    /* coloca el checkbox en un lugar y tamaño exactos*/
+    display: none;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 20px;
+    top: 30px;
+}
+
+header label:hover {
+    cursor: pointer;
+    /* cambia el cursor sobre el checkbox para indicar la interacción*/
+}
+
+
+
+
 @media only screen and (max-width: 1200px) {
     .navbar {
-        width: 100%;
+        width: 100vw;
+        margin: 0px;
+        padding: 0px;
+    }
+    a {
+        /* se define el color de los enlaces  */
+        color: rgb(0, 4, 231);
+    }
+    
+    a:link {
+        color: rgb(0, 4, 231);
+    }
+    
+    a:hover {
+        /* indica el estilo cuando el cursor está sobre el elemento */
+        color: rgb(0, 4, 231);
+        text-decoration: underline;
+    }
+    
+    
+    .botonnavbar {
+        width: 10vw;
+        padding: 5px;
+        height: inherit;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: normal;
+        text-align: center;
+        float: left;
+        cursor: pointer;
+    }
+    .navbar-right{
+        width: 20%;
+        float: right;
+        box-shadow: none;
     }
     .botonnavbarInicio {
-        width: 20%;
+        width: 15%;
+        padding: 0px;
+        margin: 0px;
     }
-    .botonnavbar {
-        width: 10%;
+
+    .foto {
+        width: 80%;
+        padding-left: 10%;
+        
     }
+    h1 {
+        font-size: 30px;
+    }
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 26px;
+    }
+    p {
+        line-height: 1.7;
+        font-size: 18px;
+        min-width: none;
+        max-width: 100vw;
+        margin: 0px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .indice {
+        display: none;
+    }
+    .contenido {
+        padding: 0px;
+        padding-top: 15%;
+        min-width: none;
+        max-width: 100vw;
+    }
+    
 }
 
 @media only screen and (max-width: 800px) {
@@ -227,7 +325,7 @@ p {
     }
     .contenido {
         padding: 0px;
-        padding-top: 300px;
+        padding-top: 15%;
         min-width: none;
         max-width: 100vw;
     }
@@ -250,22 +348,39 @@ p {
         padding-left: 5px;
         padding-right: 5px;
     }
+    header label{
+        display: block;
+        position: fixed;
+        background-color:#c06014 ;
+        width: 94vw;
+        left: 0;
+        top: 0;
+        padding: 10px;
+        padding-top: 15px;
+    }
     .navbar {
         /*Estilo de la barra de navegación*/
-        overflow: visible;
-        position: absolute;
-        /* Set the navbar to fixed position */
-        top: 0;
+        position: fixed;
+        z-index: 30;
+        width: 40%;
+        height: auto;
+        margin-left: -60%;
+        margin-top: 4px;
+        top: 54px;
         /* Position the navbar at the top of the page */
-        width: 99%;
-        height: 276px;
-        /* Full width */
         background-color: #c06014;
-        box-shadow: 0px 0px 0px 0px black;
     }
+    .navbar ul {
+        flex-direction: column;  /* se despliega en sentido vertical*/
+    } 
+    
+    #btn-menu:checked ~ .navbar {  /* el checkbox controla las dos posiciones del menu */
+        margin: 1px; 
+    } 
+    
+    
     .botonnavbarInicio {
         font-size: 16px;
-        width: 95%;
         box-shadow: 0px 0px 0px black inset;
         padding: 1px 1px 1px 1px;
         float: left;
@@ -284,5 +399,6 @@ p {
     .foto {
         width: 80%;
         padding-left: 10%;
+        
     }
 }
