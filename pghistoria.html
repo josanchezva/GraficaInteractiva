@@ -12,19 +12,27 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <!-- Asigna una barra de navegacion-->
-        <a class="botonnavbar botonnavbarInicio" href="index.html" target="_self">El canal de Suez</a>
-        <a class="botonnavbar" href="pgubicacion.html" target="_self">Ubicación</a>
-        <!-- asigna el estilo "botonnavbar" a cada botón -->
-        <a class="botonnavbar" href="pgpersonajes.html" target="_self">Personajes</a>
-        <a class="botonnavbar" href="pgactividades.html" target="_self">Actividades</a>
-        <a class="botonnavbar" href="pghistoria.html" target="_self">Historia</a>
-        <nav class="navbar-right">
-            <!-- Asigna una barra de navegacion anidada para incluir botones a la derecha de la barra-->
-            <a class="botonnavbar" href="pgreferencias.html" target="_self">Créditos</a>
+    <header>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><img src="imagenes/menu.png" width="30px" alt=""></label>
+        <nav class="navbar">
+            <!-- Asigna una barra de navegacion-->
+            <ul>
+                <li><a class="botonnavbar botonnavbarInicio" href="index.html" target="_self">El canal de Suez</a></li>
+                <li><a class="botonnavbar" href="pgubicacion.html" target="_self">Ubicación</a></li>
+                <li><a class="botonnavbar" href="pgpersonajes.html" target="_self">Personajes</a></li>
+                <li><a class="botonnavbar" href="pgactividades.html" target="_self">Actividades</a></li>
+                <li><a class="botonnavbar" href="pghistoria.html" target="_self">Historia</a></li>
+            </ul>
+            <!-- asigna el estilo "botonnavbar" a cada botón -->
+            <nav class="navbar-right">
+                <!-- Asigna una barra de navegacion anidada para incluir botones a la derecha de la barra-->
+                <ul>
+                    <li><a class="botonnavbar" href="pgreferencias.html" target="_self">Créditos</a></li>
+                </ul>
+            </nav>
         </nav>
-    </nav>
+    </header>
 
     <div class="flex-container">
         <!-- Asigna un flex container  que sera el padre de todo el contenido de la pagina-->
