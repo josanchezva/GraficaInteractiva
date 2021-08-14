@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="http://example.com/myicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/imagenes/favicon-16x16.png">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <title>El Canal de Suez</title>
+</head>
+
+<body>
+
+    <header>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><img src="imagenes/menu.png" width="30px" alt=""></label>
+        <nav class="navbar">
+            <!-- Asigna una barra de navegacion-->
+            <ul>
+                <li><a class="botonnavbar botonnavbarInicio" href="index.html" target="_self">El canal de Suez</a></li>
+                <li><a class="botonnavbar" href="pgubicacion.html" target="_self">Ubicación</a></li>
+                <li><a class="botonnavbar" href="pgpersonajes.html" target="_self">Personajes</a></li>
+                <li><a class="botonnavbar" href="pgactividades.html" target="_self">Actividades</a></li>
+                <li><a class="botonnavbar" href="pghistoria.html" target="_self">Historia</a></li>
+                <li><a class="botonnavbar" href="pgmapainteractivo.html" target="_self">Mapa Interactivo</a></li>
+            </ul>
+            <!-- asigna el estilo "botonnavbar" a cada botón -->
+            <nav class="navbar-right">
+                <!-- Asigna una barra de navegacion anidada para incluir botones a la derecha de la barra-->
+                <ul>
+                    <li><a class="botonnavbar" href="pgreferencias.html" target="_self">Créditos</a></li>
+                </ul>
+            </nav>
+        </nav>
+    </header>
+
+
+    <div class="contenido">
+        <h1>Canal de Suez</h1>
+        <hr>
+        <h2>Mapa interactivo</h2>
+        <p>
+            En esta sección se encuentra un mapa interactivo implementado con la libreria Leaflet y los proveedores
+            OpenStreetMap y MapBox. Se muestra el largo y el recorrido del canal de Suez junto con otros lugares
+            importantes.
+            <br>
+            <br>
+            Se puede modificar el tipo de mapa mostrado con los siguientes botones.
+        </p>
+        <div class="estilosmapa">
+            <button onclick="changeMapStyle(0)">Calle</button>
+            <button onclick="changeMapStyle(1)">Relieve</button>
+            <button onclick="changeMapStyle(2)">Tema Claro</button>
+            <button onclick="changeMapStyle(3)">Tema Oscuro</button>
+            <button onclick="changeMapStyle(4)">Satélite</button>
+            <button onclick="changeMapStyle(5)">Satélite con Navegación</button>
+            <button onclick="changeMapStyle(6)">Navegación Diurna</button>
+            <button onclick="changeMapStyle(7)">Navegación Nocturna</button>
+        </div>
+        <div id="mapid"></div>
+    </div>
+
+    <script type="text/javascript" src="programming.js"></script>
+</body>
+
+</html>

@@ -1,3 +1,5 @@
+/*paleta de colores Color Hunt 264862 https://colorhunt.co/palette/264862*/
+
 @charset "UTF-8";
 @font-face {
     font-family: Nanum_Gothic_Regular;
@@ -217,7 +219,7 @@ p {
 
 header {
     width: 100%;
-    z-index: 10;
+    z-index: 30;
     /* coloca el checkbox por encima del contenido*/
 }
 
@@ -236,10 +238,59 @@ header label:hover {
     /* cambia el cursor sobre el checkbox para indicar la interacción*/
 }
 
+#mapid { 
+    height: 540px; 
+    width: 720px;
+    z-index: 0;
+}
+
+.estilosmapa{
+    display: flex;
+    padding: 20px;
+
+}
+.estilosmapa button{
+  border: 2px solid #1d1d1d(216, 2, 134);
+  border-radius: 0px;
+  padding: 5px 15px;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #1d1d1d;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+  background-color:#536162
+}
+
+.estilosmapa button:hover {
+    box-shadow: inset 0 0 0 50px #c06014;
+  }
+
+
+
 
 
 
 @media only screen and (max-width: 1200px) {
+    .estilosmapa{
+        display:list-item ;
+        padding-top: 20px;
+        justify-content: left;
+    
+    }
+
+    .estilosmapa button{
+        border: 2px solid #1d1d1d(216, 2, 134);
+        border-radius: 0px;
+        padding: 5px 15px;
+        display: inline-block;
+        cursor: pointer;
+        box-shadow: inset 0 0 0 0 #1d1d1d;
+        -webkit-transition: ease-out 0.4s;
+        -moz-transition: ease-out 0.4s;
+        transition: ease-out 0.4s;
+        background-color:#536162
+      }
     .navbar {
         width: 100vw;
         margin: 0px;
@@ -316,6 +367,7 @@ header label:hover {
         min-width: none;
         max-width: 100vw;
     }
+    #mapid { height: 540px; width: 100%;}
     
 }
 
@@ -401,4 +453,5 @@ header label:hover {
         padding-left: 10%;
         
     }
+    #mapid { height: 540px; width: 100%;}
 }
